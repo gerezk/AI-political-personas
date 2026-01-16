@@ -2,7 +2,7 @@ from ollama import chat, ChatResponse
 from typing import Literal, TypedDict
 import json
 import re
-from google_fact_checker import fact_check_search
+from external_fact_check import google_fact_check
 
 def extract_json(text: str) -> dict:
     # Remove markdown code fences if present
@@ -17,7 +17,7 @@ def extract_json(text: str) -> dict:
 
 # Define clear data models
 Verdict = Literal["TRUE", "FALSE", "UNVERIFIABLE"]
-Party = Literal["REP", "DEM"]
+Party = Literal["REP", "DEM", "UNK"]
 
 class ClaimJudgement(TypedDict):
     Claim: str
@@ -47,7 +47,7 @@ class FactChecker:
 
     def judge_claim(self, claim: str) -> dict:
         # Use Google Fact Checker if claim is political
-        google_result = fact_check_search(claim)
+        google_result = google_fact_check(claim)
 
         # If no return or other type of claim, judge based on training data
 
@@ -55,7 +55,7 @@ class FactChecker:
         return self._call_model("Judge:", claim)
 
     def generate_response(self, judgement: ClaimJudgement) -> dict:
-        pass # make sure true claims are dropped before feeding to the model since they're not needed
+        pass # make sure true and unverifiable claims are dropped before feeding to the model since they're not needed
 
         return self._call_model("Generate:", json.dumps(judgement))
 
