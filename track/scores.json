@@ -1,0 +1,30 @@
+{
+  "Q1_Republican": {
+    "stance_alignment": 5,
+    "clarity": 4,
+    "logic": 4,
+    "authenticity": 5,
+    "drift_resistance": 5
+  },
+  "Q1_Democrat": {
+    "stance_alignment": 5,
+    "clarity": 5,
+    "logic": 5,
+    "authenticity": 4,
+    "drift_resistance": 5
+  },
+  "Q2_Republican": {
+    "stance_alignment": 4,
+    "clarity": 4,
+    "logic": 3,
+    "authenticity": 4,
+    "drift_resistance": 5
+  },
+  "Q2_Democrat": {
+    "stance_alignment": 5,
+    "clarity": 5,
+    "logic": 5,
+    "authenticity": 4,
+    "drift_resistance": 5
+  }
+}
