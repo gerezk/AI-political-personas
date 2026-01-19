@@ -8,12 +8,25 @@ client = ollama.AsyncClient()
 
 @cl.on_chat_start
 async def start():
+    # No need to register avatars - they work automatically!
+    # Just ensure your files are named exactly as the author names:
+    # - public/avatars/republican.png
+    # - public/avatars/democrat.png
+
+    # Initialize the transcript and settings
     cl.user_session.set("transcript", [])
+
     settings = await cl.ChatSettings([
-        Select(id="Persona", label="Who should answer?", values=["Republican", "Democrat", "Both"], initial_index=2)
+        Select(
+            id="Persona",
+            label="Who should answer?",
+            values=["Republican", "Democrat", "Both"],
+            initial_index=2
+        )
     ]).send()
     cl.user_session.set("settings", settings)
-    await cl.Message(content="Welcome to this virtual debate stage! History is being recorded.").send()
+
+    await cl.Message(content="Welcome to the debate floor! History is being recorded.").send()
 
 
 @cl.on_message
@@ -22,7 +35,7 @@ async def main(message: cl.Message):
     settings = cl.user_session.get("settings")
     persona_choice = settings.get("Persona")
 
-    # 1. Add user message to history
+    # Add user message to history
     transcript.append({"role": "user", "content": message.content})
 
     agents_to_run = []
@@ -31,18 +44,21 @@ async def main(message: cl.Message):
     if persona_choice in ["Democrat", "Both"]:
         agents_to_run.append({"name": "Democrat", "model": "dem-model:latest"})
 
-    # 2. Sequential execution of models, if "Both" selected
+    # Sequential execution of models
     for i, agent in enumerate(agents_to_run):
-        agent_msg = cl.Message(content=f"{agent["name"]}: ", author=agent["name"])
+        # The author parameter will automatically use the matching avatar
+        # from public/avatars/{author}.png
+        agent_msg = cl.Message(content=f"{agent['name']}: ", author=agent["name"])
         await agent_msg.send()
 
-        # If this is NOT the first agent, the model needs a "nudge"
-        # to know it's their turn after the previous assistant spoke.
-        current_context = list(transcript)  # Create a copy
+        # If this is NOT the first agent, nudge the model
+        current_context = list(transcript)
+        print(current_context)
         if i > 0:
             current_context.append({
                 "role": "user",
-                "content": f"It is now the {agent['name']}'s turn. Please provide your response without any tags."
+                "content": f"It is now the {agent['name']}'s turn. Please provide your natural language response to the "
+                           f"previous user prompt. Comply with any word limits and do not add a tag."
             })
 
         full_response = ""
@@ -60,20 +76,19 @@ async def main(message: cl.Message):
                     full_response += token
                     await agent_msg.stream_token(token)
 
-            # Fix for the Message.update() error
+            # Update message with final content
             if not full_response:
-                agent_msg.content = f"*{agent['name']} chose to remain silent.*"
-                await agent_msg.update()
-            else:
-                await agent_msg.update()
+                agent_msg.content = "*Chose to remain silent.*"
+            await agent_msg.update()
 
-            # Save the response to the REAL transcript
-            transcript.append({"role": "assistant", "content": f"{agent['name']}: {full_response}"})
+            # Save the response to the transcript
+            transcript.append({"role": "assistant", "content": full_response})
 
         except Exception as e:
             await cl.Message(content=f"Error with {agent['name']}: {str(e)}", author="System").send()
 
     cl.user_session.set("transcript", transcript)
+
 
 @cl.on_settings_update
 async def setup_agent(settings):
