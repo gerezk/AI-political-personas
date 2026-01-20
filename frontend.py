@@ -8,7 +8,7 @@ client = ollama.AsyncClient()
 
 @cl.on_chat_start
 async def start():
-    # Just avatar files names are the same as agent['name'] in lowercase with space replaced by _:
+    # avatar files names are the same as agent['name'] in lowercase with space replaced by _:
     # - public/avatars/republican.png
     # - public/avatars/democrat.png
 
@@ -38,10 +38,10 @@ async def main(message: cl.Message):
     transcript.append({"role": "user", "content": message.content})
 
     agents_to_run = []
-    if persona_choice in ["Republican", "Both"]:
-        agents_to_run.append({"name": "Republican", "model": "rep-model:latest"})
     if persona_choice in ["Democrat", "Both"]:
         agents_to_run.append({"name": "Democrat", "model": "dem-model:latest"})
+    if persona_choice in ["Republican", "Both"]:
+        agents_to_run.append({"name": "Republican", "model": "rep-model:latest"})
 
     # Sequential execution of models
     for i, agent in enumerate(agents_to_run):
@@ -55,10 +55,10 @@ async def main(message: cl.Message):
         if i > 0:
             current_context.append({
                 "role": "user",
-                "content": f"It is now the {agent['name']}'s turn. Please provide your natural language response to the "
-                           f"previous user prompt. Comply with any word limits and do not add a tag."
+                "content": message.content,
             })
 
+        print(current_context)
         full_response = ""
         try:
             stream = await client.chat(
@@ -80,7 +80,7 @@ async def main(message: cl.Message):
             await agent_msg.update()
 
             # Save the response to the transcript
-            transcript.append({"role": "assistant", "content": full_response})
+            transcript.append({"role": "assistant", "author": agent["name"], "content": full_response})
 
         except Exception as e:
             await cl.Message(content=f"Error with {agent['name']}: {str(e)}", author="System").send()
