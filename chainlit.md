@@ -1,14 +1,8 @@
-# Welcome to Chainlit! 🚀🤖
+# Welcome to Politikai! 🤖🤝🤖
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+The purpose of this program is to give users the opportunity to get a better insight on Democrat and Republican party positions on policies and topics of interest. This program consists of three LLM personas, two represent Democrat and Republican parties, and the third acts as a fact-checker. This fact-checker evaluates the responses by the other two personas. The user can then use the fact-checker output to further prompt the political personas.
 
-## Useful Links 🔗
-
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
-
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
-
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+Using the app is simple:
+1. Select if you want to prompt the Republican, Democrat, or both (default) using the ⚙️ icon.
+2. Enter your prompt.
+3. Wait for a response from the selected personas and the fact-checker. The latter's response will appear on the right-side in its own sidebar.

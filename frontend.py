@@ -25,7 +25,7 @@ async def start():
     ]).send()
     cl.user_session.set("settings", settings)
 
-    await cl.Message(content="Welcome to the debate floor! History is being recorded.").send()
+    await cl.Message(content="Welcome to Politikai! History is being recorded.").send()
 
 @cl.on_message
 async def main(message: cl.Message):
