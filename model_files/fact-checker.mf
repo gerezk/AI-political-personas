@@ -1,5 +1,5 @@
 # Start from your current model
-FROM llama3.1:8b
+FROM HammerAI/mistral-nemo-uncensored:latest
 
 # 1. System prompt
 SYSTEM """
