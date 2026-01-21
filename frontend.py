@@ -109,7 +109,6 @@ async def main(message: cl.Message):
             )
 
             fact_check_content = response['message']['content']
-            print(fact_check_content)
             separators = ["FACT CHECKER RESPONSE", "Fact Checker Response"]
             if separators[0] in fact_check_content:
                 separator = separators[0]
