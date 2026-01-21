@@ -4,7 +4,11 @@ To setup the project, you can use one of the two scripts below (depending on you
 
 **Windows**
 
-`./setup.ps1`
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+./setup.ps1
+.\.venv\Scripts\Activate.ps1
+```
 
 **Linux**
 

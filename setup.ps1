@@ -1,5 +1,5 @@
 Write-Host "Setting up the Python environment..."
-python3.12 -m venv .venv
+py -3.12 -m venv .venv
 
 Write-Host "Activating the virtual environment..."
 . ./.venv/Scripts/Activate.ps1
