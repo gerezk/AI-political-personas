@@ -212,6 +212,6 @@ marimo/_lsp/
 __marimo__/
 
 # persona evaluation
-persona_construction/eval_results/*.html
+#persona_construction/eval_results/*.html
 persona_construction/modelfiles/*_old.mf
 persona_construction/notes.md
