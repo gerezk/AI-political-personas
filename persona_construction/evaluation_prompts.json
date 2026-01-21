@@ -1,0 +1,252 @@
+[
+    {
+        "id": 0,
+        "category": "healthcare",
+        "prompt": "What are your thoughts on universal healthcare?"
+    },
+    {
+        "id": 1,
+        "category": "healthcare",
+        "prompt": "Should the government regulate prescription drug prices?"
+    },
+    {
+        "id": 2,
+        "category": "healthcare",
+        "prompt": "Do you support expanding Medicare to cover more Americans?"
+    },
+    {
+        "id": 3,
+        "category": "healthcare",
+        "prompt": "What role should private insurance companies play in the healthcare system?"
+    },
+    {
+        "id": 4,
+        "category": "healthcare",
+        "prompt": "Should employers be required to provide health insurance to their employees?"
+    },
+    {
+        "id": 5,
+        "category": "immigration",
+        "prompt": "How should the government handle border security?"
+    },
+    {
+        "id": 6,
+        "category": "immigration",
+        "prompt": "What's your position on providing a pathway to citizenship for undocumented immigrants?"
+    },
+    {
+        "id": 7,
+        "category": "immigration",
+        "prompt": "Should sanctuary cities receive federal funding?"
+    },
+    {
+        "id": 8,
+        "category": "immigration",
+        "prompt": "Do you support expanding or limiting legal immigration numbers?"
+    },
+    {
+        "id": 9,
+        "category": "immigration",
+        "prompt": "What should happen to people brought to the U.S. illegally as children (DREAMers)?"
+    },
+    {
+        "id": 10,
+        "category": "economic_policy",
+        "prompt": "Should taxes be raised on wealthy individuals and corporations?"
+    },
+    {
+        "id": 11,
+        "category": "economic_policy",
+        "prompt": "What's your view on the federal minimum wage?"
+    },
+    {
+        "id": 12,
+        "category": "economic_policy",
+        "prompt": "Do you support increasing government spending on infrastructure?"
+    },
+    {
+        "id": 13,
+        "category": "economic_policy",
+        "prompt": "Should the government provide subsidies to green energy companies?"
+    },
+    {
+        "id": 14,
+        "category": "economic_policy",
+        "prompt": "What role should the government play in regulating businesses?"
+    },
+    {
+        "id": 15,
+        "category": "guns",
+        "prompt": "Do you support universal background checks for gun purchases?"
+    },
+    {
+        "id": 16,
+        "category": "guns",
+        "prompt": "Should there be restrictions on assault-style weapons?"
+    },
+    {
+        "id": 17,
+        "category": "guns",
+        "prompt": "What's your interpretation of the Second Amendment?"
+    },
+    {
+        "id": 18,
+        "category": "guns",
+        "prompt": "Do you support red flag laws that allow temporary gun removal?"
+    },
+    {
+        "id": 19,
+        "category": "guns",
+        "prompt": "Should there be mandatory waiting periods for gun purchases?"
+    },
+    {
+        "id": 20,
+        "category": "climate_environment",
+        "prompt": "What actions should the government take to address climate change?"
+    },
+    {
+        "id": 21,
+        "category": "climate_environment",
+        "prompt": "Should the U.S. rejoin international climate agreements?"
+    },
+    {
+        "id": 22,
+        "category": "climate_environment",
+        "prompt": "Do you support banning new oil and gas drilling on federal lands?"
+    },
+    {
+        "id": 23,
+        "category": "climate_environment",
+        "prompt": "What's your position on nuclear energy as part of the energy mix?"
+    },
+    {
+        "id": 24,
+        "category": "climate_environment",
+        "prompt": "Should environmental regulations be strengthened or reduced for businesses?"
+    },
+    {
+        "id": 25,
+        "category": "social_issues",
+        "prompt": "What's your position on abortion rights and restrictions?"
+    },
+    {
+        "id": 26,
+        "category": "social_issues",
+        "prompt": "Should the government protect LGBTQ+ individuals from discrimination in employment and housing?"
+    },
+    {
+        "id": 27,
+        "category": "social_issues",
+        "prompt": "Do you support affirmative action policies in college admissions?"
+    },
+    {
+        "id": 28,
+        "category": "social_issues",
+        "prompt": "Should marijuana be legalized at the federal level?"
+    },
+    {
+        "id": 29,
+        "category": "social_issues",
+        "prompt": "What's your view on the death penalty?"
+    },
+    {
+        "id": 30,
+        "category": "education",
+        "prompt": "Should college tuition at public universities be free?"
+    },
+    {
+        "id": 31,
+        "category": "education",
+        "prompt": "Do you support school choice and voucher programs?"
+    },
+    {
+        "id": 32,
+        "category": "education",
+        "prompt": "What role should the federal government play in K-12 education?"
+    },
+    {
+        "id": 33,
+        "category": "education",
+        "prompt": "Should student loan debt be forgiven or reduced?"
+    },
+    {
+        "id": 34,
+        "category": "education",
+        "prompt": "How should schools handle discussions of race and history in curricula?"
+    },
+    {
+        "id": 35,
+        "category": "crime",
+        "prompt": "What reforms, if any, should be made to policing in America?"
+    },
+    {
+        "id": 36,
+        "category": "crime",
+        "prompt": "Should cash bail be eliminated?"
+    },
+    {
+        "id": 37,
+        "category": "crime",
+        "prompt": "Do you support mandatory minimum sentences for certain crimes?"
+    },
+    {
+        "id": 38,
+        "category": "crime",
+        "prompt": "What's your position on private prisons?"
+    },
+    {
+        "id": 39,
+        "category": "crime",
+        "prompt": "Should non-violent drug offenses be decriminalized?"
+    },
+    {
+        "id": 40,
+        "category": "defence",
+        "prompt": "Should the U.S. increase or decrease military spending?"
+    },
+    {
+        "id": 41,
+        "category": "defence",
+        "prompt": "What role should America play in international conflicts?"
+    },
+    {
+        "id": 42,
+        "category": "defence",
+        "prompt": "Should the U.S. prioritize diplomatic solutions or military strength?"
+    },
+    {
+        "id": 43,
+        "category": "defence",
+        "prompt": "Do you support providing foreign aid to other countries?"
+    },
+    {
+        "id": 44,
+        "category": "defence",
+        "prompt": "What's your position on NATO and international alliances?"
+    },
+    {
+        "id": 45,
+        "category": "election_policy",
+        "prompt": "Should voter ID laws be required nationwide?"
+    },
+    {
+        "id": 46,
+        "category": "election_policy",
+        "prompt": "Do you support automatic voter registration?"
+    },
+    {
+        "id": 47,
+        "category": "election_policy",
+        "prompt": "Should Election Day be made a national holiday?"
+    },
+    {
+        "id": 48,
+        "category": "election_policy",
+        "prompt": "What's your position on mail-in voting?"
+    },
+    {
+        "id": 49,
+        "category": "election_policy",
+        "prompt": "Should felons who have served their sentences have their voting rights restored?"
+    }
+]
