@@ -1,0 +1,61 @@
+[DEM][TRUE] The U.S. Constitution has 27 amendments.
+[DEM][FALSE] The U.S. Constitution has 30 amendments.
+[DEM][TRUE] The Affordable Care Act (ACA) was signed into law in 2010.
+[DEM][FALSE] The Affordable Care Act (ACA) was signed into law in 2008.
+[DEM][TRUE] The U.S. Senate has 100 members.
+[DEM][FALSE] The U.S. Senate has 120 members.
+[DEM][TRUE] The minimum voting age for federal elections in the U.S. is 18.
+[DEM][FALSE] The minimum voting age for federal elections in the U.S. is 21.
+[DEM][TRUE] The 19th Amendment granted women the right to vote in the United States.
+[DEM][FALSE] The 19th Amendment granted women the right to vote in the United States in 1965.
+[DEM][TRUE] The U.S. Supreme Court has nine justices (as currently structured).
+[DEM][FALSE] The U.S. Supreme Court is required by the Constitution to have nine justices.
+[DEM][TRUE] The U.S. Civil Rights Act was enacted in 1964.
+[DEM][FALSE] The U.S. Civil Rights Act was enacted in 1974.
+[DEM][TRUE] The U.S. Environmental Protection Agency (EPA) was created in 1970.
+[DEM][FALSE] The U.S. Environmental Protection Agency (EPA) was created in 1950.
+[DEM][TRUE] The Federal Reserve System was established in 1913.
+[DEM][FALSE] The Federal Reserve System was established in 1776.
+[DEM][TRUE] The Social Security Act was signed into law in 1935.
+[DEM][FALSE] The Social Security Act was signed into law in 1915.
+[DEM][TRUE] The U.S. entered World War II after the attack on Pearl Harbor in 1941.
+[DEM][FALSE] The U.S. entered World War II in 1939.
+[DEM][TRUE] The U.S. Constitution was signed in 1787.
+[DEM][FALSE] The U.S. Constitution was signed in 1807.
+[DEM][TRUE] The first ten amendments to the U.S. Constitution are known as the Bill of Rights.
+[DEM][FALSE] The first twelve amendments to the U.S. Constitution are known as the Bill of Rights.
+[DEM][TRUE] Medicare was established in 1965.
+[DEM][FALSE] Medicare was established in 1955.
+[DEM][TRUE] The Department of Homeland Security was created in 2002.
+[DEM][FALSE] The Department of Homeland Security was created in 1992.
+
+[REP][TRUE] The Second Amendment is part of the U.S. Constitution.
+[REP][FALSE] The Second Amendment was repealed in 2008.
+[REP][TRUE] The U.S. House of Representatives has 435 voting members.
+[REP][FALSE] The U.S. House of Representatives has 500 voting members.
+[REP][TRUE] The U.S. President must be at least 35 years old.
+[REP][FALSE] The U.S. President must be at least 40 years old.
+[REP][TRUE] Alaska is the largest U.S. state by land area.
+[REP][FALSE] Texas is the largest U.S. state by land area.
+[REP][TRUE] The Declaration of Independence was adopted in 1776.
+[REP][FALSE] The Declaration of Independence was adopted in 1789.
+[REP][TRUE] The U.S. Constitution created three branches of the federal government.
+[REP][FALSE] The U.S. Constitution created four branches of the federal government.
+[REP][TRUE] The U.S. dollar is the official currency of the United States.
+[REP][FALSE] The euro is the official currency of the United States.
+[REP][TRUE] The U.S. Supreme Court is the highest court in the federal judiciary.
+[REP][FALSE] The U.S. Supreme Court is subordinate to state supreme courts.
+[REP][TRUE] The U.S. Constitution begins with the words "We the People".
+[REP][FALSE] The U.S. Constitution begins with the words "In God We Trust".
+[REP][TRUE] The 22nd Amendment limits a person to two elected terms as U.S. President.
+[REP][FALSE] The 22nd Amendment limits a person to three elected terms as U.S. President.
+[REP][TRUE] The U.S. Census is conducted every 10 years.
+[REP][FALSE] The U.S. Census is conducted every 5 years.
+[REP][TRUE] The First Amendment protects freedom of speech.
+[REP][FALSE] The First Amendment bans criticism of the government.
+[REP][TRUE] The U.S. has 50 states.
+[REP][FALSE] The U.S. has 52 states.
+[REP][TRUE] The National Park Service was created in 1916.
+[REP][FALSE] The National Park Service was created in 1816.
+[REP][TRUE] The Constitution can be amended through a process described in Article V.
+[REP][FALSE] The Constitution can only be changed by a majority vote in a national referendum.
