@@ -2,7 +2,7 @@
 
 The repository was originally developed as a group project for the Generative AI course at the [Vienna University of Technology](https://www.tuwien.at/). I contributed primarily to the fact-checker persona and the front-end. 
 
-This fork contains additional improvements I made independently to the democratic and republican personas.
+Beyond the course, I made additional improvements to the democratic and republican personas.
 
 # Setup
 
