@@ -1,8 +1,12 @@
-# Overview
+# About this Repository
+
+The repository was originally developed as a group project for the Generative AI course at the [Vienna University of Technology](https://www.tuwien.at/). I contributed primarily to the fact-checker persona and the front-end. 
+
+This fork contains additional improvements I made independently to the democratic and republican personas.
 
 # Setup
 
-To setup the project, you can use one of the two scripts below (depending on your operating system). You must have Python 3.12 installed.
+To set up the project, you can use one of the two scripts below (depending on your operating system). You must have Python 3.12 installed.
 
 **Windows**
 
