@@ -98,6 +98,8 @@ chainlit run frontend.py -w
 
 The system prompts were crafted to ensure that information beyond the model's knowledge cutoff date, April 2024, weren't included.
 
+---
+
 ## ⚠️ Disclaimer
 This repository is provided for demonstration and educational purposes only.
 
