@@ -10,8 +10,6 @@ The goal is to explore:
 - How bias and framing influence responses
 - How AI systems can simulate ideological perspectives responsibly
 
----
-
 ## 🎯 Motivation
 Large Language Models can be steered into specific roles using prompt design.
 
@@ -20,8 +18,6 @@ This project investigates:
 - Prompt engineering strategies
 - Ethical considerations in political AI systems
 - User interaction design
-
----
 
 ## 🛠️ Tech Stack
 - Python (3.12)
@@ -35,8 +31,6 @@ This project investigates:
 - Plotly Express (data visualization)
 - Jupyter Notebook (evaluation of political personas)
 
----
-
 The repository was originally developed as a group project for the Generative AI course at the [Vienna University of Technology](https://www.tuwien.at/).
 
 ## 🧠 My Contributions
@@ -44,21 +38,15 @@ The repository was originally developed as a group project for the Generative AI
 - Developed front-end and integration with LLMs.
 - Enhancements to the system prompts for the democratic and republican personas.
 
----
-
 ## ⚙️ How It Works
 1. The user selects one or both (default) political personas to prompt.
 2. User enters a prompt.
 3. Response from the political personas are streamed to the UI.
 4. Evaluation from the fact-checker persona is generated then displayed on a sidebar.
 
----
-
 ## 🖥️ Demo Screenshot
 
 ![](example.png)
-
----
 
 ## ▶️ How to Run
 
@@ -90,15 +78,11 @@ The app can then be run using the following command in the project directory:
 chainlit run frontend.py -w
 ```
 
----
-
 ## ℹ️ Sources
 - The democratic persona's system prompt was based on a [Pew Research Center](https://www.pewresearch.org/politics/2020/01/30/as-voting-begins-democrats-are-upbeat-about-the-2020-field-divided-in-their-preferences/) survey of registered voters prior to the 2020 election.
 - The republican persona's system prompt was based on a [Manhattan Institute](https://manhattan.institute/article/the-new-gop-survey-analysis-of-americans-overall-todays-republican-coalition-and-the-minorities-of-maga) survey of 2024 Trump voters and registered republicans.
 
 The system prompts were crafted to ensure that information beyond the model's knowledge cutoff date, April 2024, weren't included.
-
----
 
 ## ⚠️ Disclaimer
 This repository is provided for demonstration and educational purposes only.
