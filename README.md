@@ -1,5 +1,8 @@
 # 🗳️🤖 AI Political Personas
 
+## 📌 TL;DR
+Interactive AI app with politically-steered LLM personas + a fact-checker. Uses modern prompt engineering and a Chainlit front-end.
+
 ## 🚀 Overview
 This project is an interactive AI application that simulates different political personas responding to user queries.
 
